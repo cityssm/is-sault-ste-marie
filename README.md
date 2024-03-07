@@ -7,7 +7,7 @@ You know your city name is challenging when it requires
 [clarification from the Government of Canada](https://www.noslangues-ourlanguages.gc.ca/en/writing-tips-plus/sault-ste.-marie-soo-saultite.html)
 to spell it properly.
 
-**This package standardizes the spelling of our beloved city, Sault Ste. Marie.**
+**This package helps standardize the spelling of our beloved city, Sault Ste. Marie.**
 
 Includes the full spelling, the preferred abbreviated spelling,
 common misspellings, and unique spellings from other sources,
