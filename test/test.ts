@@ -16,7 +16,9 @@ describe('isSaultSteMarie()', () => {
 describe('fixSaultSteMarie()', () => {
   it('Uses the preferred spelling of Sault Ste. Marie', () => {
     assert.strictEqual(
-      isSaultSteMarie.fixSaultSteMarie('sault  ste marie'),
+      isSaultSteMarie.fixSaultSteMarie(
+        isSaultSteMarie.canadaPostSaultSteMarieSpelling
+      ),
       isSaultSteMarie.preferredSaultSteMarieSpelling
     )
   })

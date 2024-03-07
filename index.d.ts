@@ -1,4 +1,5 @@
 export declare const preferredSaultSteMarieSpelling = "Sault Ste. Marie";
+export declare const canadaPostSaultSteMarieSpelling = "S-STE-MARIE";
 /**
  * Determines whether a word is a spelling of Sault Ste. Marie.
  * @param {string} possibleSpelling - A possible spelling of Sault Ste. Marie.

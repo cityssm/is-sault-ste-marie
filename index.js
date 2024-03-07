@@ -1,4 +1,5 @@
 export const preferredSaultSteMarieSpelling = 'Sault Ste. Marie';
+export const canadaPostSaultSteMarieSpelling = 'S-STE-MARIE';
 const lowerCaseSaultSteMarieSpellings = new Set([
     's s marie',
     's ste marie',

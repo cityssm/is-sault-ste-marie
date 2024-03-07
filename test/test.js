@@ -11,7 +11,7 @@ describe('isSaultSteMarie()', () => {
 });
 describe('fixSaultSteMarie()', () => {
     it('Uses the preferred spelling of Sault Ste. Marie', () => {
-        assert.strictEqual(isSaultSteMarie.fixSaultSteMarie('sault  ste marie'), isSaultSteMarie.preferredSaultSteMarieSpelling);
+        assert.strictEqual(isSaultSteMarie.fixSaultSteMarie(isSaultSteMarie.canadaPostSaultSteMarieSpelling), isSaultSteMarie.preferredSaultSteMarieSpelling);
     });
     it('Uses a given spelling of Sault Ste. Marie', () => {
         const givenSpelling = 'the soo';
