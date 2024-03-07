@@ -12,7 +12,7 @@
     "coverage": "c8 mocha"
   },
   "keywords": [
-    "sault ste marie"
+    "sault-ste-marie"
   ],
   "repository": {
     "type": "git",
