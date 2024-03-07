@@ -3,6 +3,7 @@
 [![npm (scoped)](https://img.shields.io/npm/v/%40cityssm/is-sault-ste-marie)](https://www.npmjs.com/package/@cityssm/is-sault-ste-marie)
 [![DeepSource](https://app.deepsource.com/gh/cityssm/is-sault-ste-marie.svg/?label=active+issues&show_trend=true&token=4oKKC7nU8DJt6p8_gbYnL4im)](https://app.deepsource.com/gh/cityssm/is-sault-ste-marie/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/839fac32847d10185de3/maintainability)](https://codeclimate.com/github/cityssm/is-sault-ste-marie/maintainability)
+[![Coverage Testing](https://github.com/cityssm/is-sault-ste-marie/actions/workflows/coverage.yml/badge.svg)](https://github.com/cityssm/is-sault-ste-marie/actions/workflows/coverage.yml)
 
 You know your city name is challenging when it requires
 [clarification from the Government of Canada](https://www.noslangues-ourlanguages.gc.ca/en/writing-tips-plus/sault-ste.-marie-soo-saultite.html)
