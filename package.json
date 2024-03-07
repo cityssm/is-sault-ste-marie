@@ -1,0 +1,32 @@
+{
+  "name": "@cityssm/is-sault-ste-marie",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "description": "Standardizes the spelling of our beloved city, Sault Ste. Marie!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "c8 mocha"
+  },
+  "keywords": [
+    "sault ste marie"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/is-sault-ste-marie.git"
+  },
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityssm/is-sault-ste-marie/issues"
+  },
+  "homepage": "https://github.com/cityssm/is-sault-ste-marie#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.25",
+    "eslint-config-cityssm": "^1.4.2"
+  }
+}
