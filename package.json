@@ -6,7 +6,7 @@
     "node": ">=18.0.0"
   },
   "description": "Standardizes the spelling of our beloved city, Sault Ste. Marie!",
-  "main": "index.js",
+  "exports": "./index.js",
   "scripts": {
     "test": "mocha",
     "coverage": "c8 mocha"
