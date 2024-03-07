@@ -26,14 +26,14 @@ import { isSaultSteMarie, fixSaultSteMarie } from '@cityssm/is-sault-ste-marie'
 
 // Test whether a string is a spelling of Sault Ste. Marie.
 
-console.log( isSaultSteMarie('Sault Ste. Marie') )   // => true
-console.log( isSaultSteMarie('Sault-Sainte-Marie') ) // => true
-console.log( isSaultSteMarie('Toronto') ) // => false
+console.log(isSaultSteMarie('Sault Ste. Marie')) // => true
+console.log(isSaultSteMarie('Sault-Sainte-Marie')) // => true
+console.log(isSaultSteMarie('Toronto')) // => false
 
 // Returns a preferred spelling of Sault Ste. Marie, or the original string.
 
-console.log( fixSaultSteMarie('Sault Ste Marie') )    // => "Sault Ste. Marie"
-console.log( fixSaultSteMarie('Sault-Sainte-Marie') ) // => "Sault Ste. Marie"
-console.log( fixSaultSteMarie('Sault Ste. Marie', 'The Sault') ) // => "The Sault"
-console.log( fixSaultSteMarie('Toronto') ) // => "Toronto"
+console.log(fixSaultSteMarie('Sault Ste Marie')) // => "Sault Ste. Marie"
+console.log(fixSaultSteMarie('Sault-Sainte-Marie')) // => "Sault Ste. Marie"
+console.log(fixSaultSteMarie('Sault Ste. Marie', 'The Sault')) // => "The Sault"
+console.log(fixSaultSteMarie('Toronto')) // => "Toronto"
 ```
