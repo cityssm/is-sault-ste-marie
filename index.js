@@ -17,13 +17,25 @@ const lowerCaseSaultSteMarieSpellings = new Set([
     'sault saint marie',
     'sault st marie',
     // Other Typos
+    'ault ste marie',
+    'dault ste marie',
     'salt ste marie',
     'salut ste marie',
+    'saulat ste marie',
+    'sault st emarie',
+    'sault ste maire',
+    'sault ste mare',
+    'sault ste marei',
+    'sault ste mari',
+    'sault ste mrie',
     'soo ste marie',
     // Others
+    's s m',
     's s marie',
+    'sault stemarie',
     'saultstemarie',
-    'ssm'
+    'ssm',
+    'ssmarie'
 ]);
 /**
  * Determines whether a word is a spelling of Sault Ste. Marie.
@@ -34,7 +46,7 @@ export function isSaultSteMarie(possibleSpelling) {
     const sanitizedSpelling = possibleSpelling
         .trim()
         .toLowerCase()
-        .replaceAll(/[.-]/g, ' ')
+        .replaceAll(/[,.-]/g, ' ')
         .replaceAll(/\s+/g, ' ');
     return lowerCaseSaultSteMarieSpellings.has(sanitizedSpelling);
 }

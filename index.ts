@@ -24,14 +24,26 @@ const lowerCaseSaultSteMarieSpellings = new Set([
   'sault st marie',
 
   // Other Typos
+  'ault ste marie',
+  'dault ste marie',
   'salt ste marie',
   'salut ste marie',
+  'saulat ste marie',
+  'sault st emarie',
+  'sault ste maire',
+  'sault ste mare',
+  'sault ste marei',
+  'sault ste mari',
+  'sault ste mrie',
   'soo ste marie',
 
   // Others
+  's s m',
   's s marie',
+  'sault stemarie',
   'saultstemarie',
-  'ssm'
+  'ssm',
+  'ssmarie'
 ])
 
 /**
@@ -43,7 +55,7 @@ export function isSaultSteMarie(possibleSpelling: string): boolean {
   const sanitizedSpelling = possibleSpelling
     .trim()
     .toLowerCase()
-    .replaceAll(/[.-]/g, ' ')
+    .replaceAll(/[,.-]/g, ' ')
     .replaceAll(/\s+/g, ' ')
 
   return lowerCaseSaultSteMarieSpellings.has(sanitizedSpelling)
