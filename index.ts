@@ -1,13 +1,19 @@
 export const preferredSaultSteMarieSpelling = 'Sault Ste. Marie'
 
 const lowerCaseSaultSteMarieSpellings = new Set([
+  's s marie',
   's ste marie',
+  'salt ste marie',
+  'salut ste marie',
   'sault saint marie',
   'sault sainte marie',
   'sault st marie',
   'sault ste marie',
+  'saultstemarie',
   'soo ste marie',
-  'ssm'
+  'ssm',
+  'the sault',
+  'the soo'
 ])
 
 /**
