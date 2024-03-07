@@ -3,19 +3,35 @@ export const preferredSaultSteMarieSpelling = 'Sault Ste. Marie'
 export const canadaPostSaultSteMarieSpelling = 'S-STE-MARIE'
 
 const lowerCaseSaultSteMarieSpellings = new Set([
-  's s marie',
+  // Proper spellings
+  'sault sainte marie',
+  'sault ste marie',
+
+  // Canada Post
   's ste marie',
+
+  // MPAC
+  'sault sainte m',
+  'sault ste mari',
+  'saulte ste marie',
+
+  // Slang
+  'the sault',
+  'the soo',
+
+  // Sainte Typos
+  'sault saint marie',
+  'sault st marie',
+
+  // Other Typos
   'salt ste marie',
   'salut ste marie',
-  'sault saint marie',
-  'sault sainte marie',
-  'sault st marie',
-  'sault ste marie',
-  'saultstemarie',
   'soo ste marie',
-  'ssm',
-  'the sault',
-  'the soo'
+
+  // Others
+  's s marie',
+  'saultstemarie',
+  'ssm'
 ])
 
 /**
