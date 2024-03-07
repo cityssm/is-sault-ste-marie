@@ -1,10 +1,17 @@
 # Is Sault Ste. Marie
 
+[![DeepSource](https://app.deepsource.com/gh/cityssm/is-sault-ste-marie.svg/?label=active+issues&show_trend=true&token=4oKKC7nU8DJt6p8_gbYnL4im)](https://app.deepsource.com/gh/cityssm/is-sault-ste-marie/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/839fac32847d10185de3/maintainability)](https://codeclimate.com/github/cityssm/is-sault-ste-marie/maintainability)
+
 You know your city name is challenging when it requires
 [clarification from the Government of Canada](https://www.noslangues-ourlanguages.gc.ca/en/writing-tips-plus/sault-ste.-marie-soo-saultite.html)
 to spell it properly.
 
-This package standardizes the spelling of our beloved city, Sault Ste. Marie.
+**This package standardizes the spelling of our beloved city, Sault Ste. Marie.**
+
+Includes the full spelling, the preferred abbreviated spelling,
+common misspellings, and unique spellings from other sources,
+like Canada Post and the Ontario Ministry of Transportation.
 
 ## Installation
 
