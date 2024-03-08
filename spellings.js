@@ -11,9 +11,10 @@ const product = cartesianProduct([
     wordSpellings.ste,
     wordSpellings.marie
 ]);
-// Generate spaced combinations
+// Generate combinations
 const lowerCaseSaultSteMarieSpellingsList = product.map((combination) => {
     return combination.join('');
 });
+// Add specific misspellings and slang names
 lowerCaseSaultSteMarieSpellingsList.push('saltstemarie', 'salutstemarie', 'thesault', 'thesoo');
 export const lowerCaseSaultSteMarieSpellings = new Set(lowerCaseSaultSteMarieSpellingsList);
