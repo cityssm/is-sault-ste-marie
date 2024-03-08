@@ -2,6 +2,16 @@ import assert from 'node:assert'
 
 import * as isSaultSteMarie from '../index.js'
 
+describe('spellings', () => {
+  before(() => {
+    console.log([...isSaultSteMarie.lowerCaseSaultSteMarieSpellings])
+  })
+
+  it('Has spellings of Sault Ste. Marie available', () => {
+    assert.ok(isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size > 0)
+  })
+})
+
 describe('isSaultSteMarie()', () => {
   it('Validates spellings of Sault Ste. Marie', () => {
     assert.ok(isSaultSteMarie.isSaultSteMarie('Sault Ste. Marie'))

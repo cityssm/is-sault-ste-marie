@@ -5,36 +5,27 @@ export const preferredSaultSteMarieSpelling = 'Sault Ste. Marie'
 export const canadaPostSaultSteMarieSpelling = 'S-STE-MARIE'
 
 const wordSpellings = {
-  sault: [
-    'ault',
-    'dault',
-    's',
-    'salt',
-    'salut',
-    'sault',
-    'saulte',
-    'soo',
-    'sult'
-  ],
+  sault: ['s', 'sault', 'saulte', 'soo'],
   ste: ['s', 'st', 'ste', 'saint', 'sainte'],
-  marie: ['m', 'mare', 'marei', 'maire', 'marie', 'mary']
+  marie: ['m', 'mari', 'marie', 'mary']
 }
 
-const lowerCaseSaultSteMarieSpellingsList = cartesianProduct([
+const product = cartesianProduct([
   wordSpellings.sault,
   wordSpellings.ste,
   wordSpellings.marie
-]).map((combination) => {
-  return combination.join(' ')
+])
+
+// Generate spaced combinations
+const lowerCaseSaultSteMarieSpellingsList = product.map((combination) => {
+  return combination.join('')
 })
 
 lowerCaseSaultSteMarieSpellingsList.push(
-  'the sault',
-  'the soo',
-  'sault stemarie',
-  'saultstemarie',
-  'ssm',
-  'ssmarie'
+  'saltstemarie',
+  'salutstemarie',
+  'thesault',
+  'thesoo'
 )
 
 export const lowerCaseSaultSteMarieSpellings = new Set(

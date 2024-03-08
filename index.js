@@ -8,8 +8,7 @@ export function isSaultSteMarie(possibleSpelling) {
     const sanitizedSpelling = possibleSpelling
         .trim()
         .toLowerCase()
-        .replaceAll(/[,.-]/g, ' ')
-        .replaceAll(/\s+/g, ' ');
+        .replaceAll(/[\s,.-]/g, '');
     return lowerCaseSaultSteMarieSpellings.has(sanitizedSpelling);
 }
 /**
