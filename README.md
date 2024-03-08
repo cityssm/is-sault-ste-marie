@@ -27,7 +27,7 @@ npm install @cityssm/is-sault-ste-marie
 ```javascript
 import { isSaultSteMarie, fixSaultSteMarie } from '@cityssm/is-sault-ste-marie'
 
-// Test whether a string is a spelling of Sault Ste. Marie.
+// Tests whether a string is a spelling of Sault Ste. Marie.
 
 console.log(isSaultSteMarie('Sault Ste. Marie')) // => true
 console.log(isSaultSteMarie('Sault-Sainte-Marie')) // => true

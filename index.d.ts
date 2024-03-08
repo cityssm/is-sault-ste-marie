@@ -1,5 +1,3 @@
-export declare const preferredSaultSteMarieSpelling = "Sault Ste. Marie";
-export declare const canadaPostSaultSteMarieSpelling = "S-STE-MARIE";
 /**
  * Determines whether a word is a spelling of Sault Ste. Marie.
  * @param {string} possibleSpelling - A possible spelling of Sault Ste. Marie.
@@ -13,3 +11,4 @@ export declare function isSaultSteMarie(possibleSpelling: string): boolean;
  * @returns {string} - The preferred spelling if the possible spelling is a spelling of Sault Ste. Marie. Otherwise, the possible spelling is returned.
  */
 export declare function fixSaultSteMarie(possibleSpelling: string, preferredSpelling?: string): string;
+export { preferredSaultSteMarieSpelling, canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings } from './spellings.js';
