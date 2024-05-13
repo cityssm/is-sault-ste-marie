@@ -1,4 +1,4 @@
-import { lowerCaseSaultSteMarieSpellings, preferredSaultSteMarieSpelling } from './spellings.js';
+import { canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings, preferredSaultSteMarieSpelling } from './spellings.js';
 function sanitizeSpelling(possibleSpelling) {
     return possibleSpelling
         .trim()
@@ -33,3 +33,11 @@ export function fixSaultSteMarie(possibleSpelling, preferredSpelling = preferred
     return possibleSpelling;
 }
 export { preferredSaultSteMarieSpelling, canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings } from './spellings.js';
+export default {
+    addSaultSteMarieSpelling,
+    isSaultSteMarie,
+    fixSaultSteMarie,
+    preferredSaultSteMarieSpelling,
+    canadaPostSaultSteMarieSpelling,
+    lowerCaseSaultSteMarieSpellings
+};

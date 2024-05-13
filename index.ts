@@ -1,4 +1,5 @@
 import {
+  canadaPostSaultSteMarieSpelling,
   lowerCaseSaultSteMarieSpellings,
   preferredSaultSteMarieSpelling
 } from './spellings.js'
@@ -48,3 +49,13 @@ export {
   canadaPostSaultSteMarieSpelling,
   lowerCaseSaultSteMarieSpellings
 } from './spellings.js'
+
+export default {
+  addSaultSteMarieSpelling,
+  isSaultSteMarie,
+  fixSaultSteMarie,
+
+  preferredSaultSteMarieSpelling,
+  canadaPostSaultSteMarieSpelling,
+  lowerCaseSaultSteMarieSpellings
+}

@@ -17,3 +17,12 @@ export declare function isSaultSteMarie(possibleSpelling: string): boolean;
  */
 export declare function fixSaultSteMarie(possibleSpelling: string, preferredSpelling?: string): string;
 export { preferredSaultSteMarieSpelling, canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings } from './spellings.js';
+declare const _default: {
+    addSaultSteMarieSpelling: typeof addSaultSteMarieSpelling;
+    isSaultSteMarie: typeof isSaultSteMarie;
+    fixSaultSteMarie: typeof fixSaultSteMarie;
+    preferredSaultSteMarieSpelling: string;
+    canadaPostSaultSteMarieSpelling: string;
+    lowerCaseSaultSteMarieSpellings: Set<string>;
+};
+export default _default;
