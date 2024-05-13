@@ -26,8 +26,8 @@
   "homepage": "https://github.com/cityssm/is-sault-ste-marie#readme",
   "devDependencies": {
     "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.25",
-    "eslint-config-cityssm": "^1.4.2"
+    "@types/node": "^20.12.11",
+    "eslint-config-cityssm": "^2.1.0"
   },
   "dependencies": {
     "just-cartesian-product": "^4.2.0"
