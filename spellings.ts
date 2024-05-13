@@ -1,7 +1,15 @@
 import cartesianProduct from 'just-cartesian-product'
 
+/**
+ * See
+ * https://www.noslangues-ourlanguages.gc.ca/en/writing-tips-plus/sault-ste.-marie-soo-saultite
+ */
 export const preferredSaultSteMarieSpelling = 'Sault Ste. Marie'
 
+/**
+ * See
+ * https://www.canadapost-postescanada.ca/cpc/en/support/kb/business/address-accuracy/municipality-abbreviations-ontario
+ */
 export const canadaPostSaultSteMarieSpelling = 'S-STE-MARIE'
 
 const wordSpellings = {
