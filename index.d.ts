@@ -1,4 +1,9 @@
 /**
+ * Adds a new spelling of Sault Ste. Marie to the list of checked spellings.
+ * @param {string} newSpelling - A new spelling of Sault Ste. Marie.
+ */
+export declare function addSaultSteMarieSpelling(newSpelling: string): void;
+/**
  * Determines whether a word is a spelling of Sault Ste. Marie.
  * @param {string} possibleSpelling - A possible spelling of Sault Ste. Marie.
  * @returns {boolean} - True if the possible spelling appears to be a spelling of Sault Ste. Marie.

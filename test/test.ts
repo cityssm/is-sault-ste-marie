@@ -21,6 +21,17 @@ describe('isSaultSteMarie()', () => {
   it('Return false for spellings that are not Sault Ste. Marie', () => {
     assert.ok(!isSaultSteMarie.isSaultSteMarie('Toronto'))
   })
+
+  it('Accepts a new spelling of Sault Ste. Marie', () => {
+    const pizzaCaptial = 'pizza capital of ontario'
+
+    assert.ok(!isSaultSteMarie.isSaultSteMarie(pizzaCaptial))
+
+    isSaultSteMarie.addSaultSteMarieSpelling(pizzaCaptial)
+    console.log(isSaultSteMarie.lowerCaseSaultSteMarieSpellings)
+
+    assert.ok(isSaultSteMarie.isSaultSteMarie(pizzaCaptial))
+  })
 })
 
 describe('fixSaultSteMarie()', () => {
