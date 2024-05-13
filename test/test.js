@@ -1,9 +1,7 @@
 import assert from 'node:assert';
 import * as isSaultSteMarie from '../index.js';
+import { describe, it } from 'node:test';
 describe('spellings', () => {
-    before(() => {
-        console.log([...isSaultSteMarie.lowerCaseSaultSteMarieSpellings]);
-    });
     it('Has spellings of Sault Ste. Marie available', () => {
         assert.ok(isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size > 0);
     });
@@ -16,11 +14,12 @@ describe('isSaultSteMarie()', () => {
     it('Return false for spellings that are not Sault Ste. Marie', () => {
         assert.ok(!isSaultSteMarie.isSaultSteMarie('Toronto'));
     });
-    it('Accepts a new spelling of Sault Ste. Marie', () => {
+    it('Adds a new spelling of Sault Ste. Marie', () => {
         const pizzaCaptial = 'pizza capital of ontario';
         assert.ok(!isSaultSteMarie.isSaultSteMarie(pizzaCaptial));
+        const formerSpellingCount = isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size;
         isSaultSteMarie.addSaultSteMarieSpelling(pizzaCaptial);
-        console.log(isSaultSteMarie.lowerCaseSaultSteMarieSpellings);
+        assert.strictEqual(isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size, formerSpellingCount + 1);
         assert.ok(isSaultSteMarie.isSaultSteMarie(pizzaCaptial));
     });
 });
