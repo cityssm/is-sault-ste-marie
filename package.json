@@ -25,8 +25,9 @@
   },
   "homepage": "https://github.com/cityssm/is-sault-ste-marie#readme",
   "devDependencies": {
-    "@types/node": "^20.12.11",
-    "eslint-config-cityssm": "^2.1.0"
+    "@types/node": "^22.7.9",
+    "eslint-config-cityssm": "^13.1.0",
+    "prettier-config-cityssm": "^1.0.0"
   },
   "dependencies": {
     "just-cartesian-product": "^4.2.0"
