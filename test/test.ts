@@ -24,6 +24,7 @@ await describe('isSaultSteMarie()', async () => {
 
     assert.ok(!isSaultSteMarie.isSaultSteMarie(pizzaCapital))
 
+    // eslint-disable-next-line @typescript-eslint/prefer-destructuring
     const formerSpellingCount =
       isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size
 

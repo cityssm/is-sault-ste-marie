@@ -17,6 +17,7 @@ await describe('isSaultSteMarie()', async () => {
     await it('Adds a new spelling of Sault Ste. Marie', () => {
         const pizzaCapital = 'pizza capital of ontario';
         assert.ok(!isSaultSteMarie.isSaultSteMarie(pizzaCapital));
+        // eslint-disable-next-line @typescript-eslint/prefer-destructuring
         const formerSpellingCount = isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size;
         isSaultSteMarie.addSaultSteMarieSpelling(pizzaCapital);
         assert.strictEqual(isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size, formerSpellingCount + 1);
