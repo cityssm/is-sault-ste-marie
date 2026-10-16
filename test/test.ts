@@ -1,3 +1,5 @@
+/* eslint-disable node-test/no-async-describe */
+
 import assert from 'node:assert'
 import { describe, it } from 'node:test'
 
@@ -24,12 +26,11 @@ await describe('isSaultSteMarie()', async () => {
 
     assert.ok(!isSaultSteMarie.isSaultSteMarie(pizzaCapital))
 
-    // eslint-disable-next-line @typescript-eslint/prefer-destructuring
     const formerSpellingCount =
       isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size
 
     isSaultSteMarie.addSaultSteMarieSpelling(pizzaCapital)
-    
+
     assert.strictEqual(
       isSaultSteMarie.lowerCaseSaultSteMarieSpellings.size,
       formerSpellingCount + 1

@@ -16,13 +16,13 @@ export declare function isSaultSteMarie(possibleSpelling: string): boolean;
  * @returns The preferred spelling if the possible spelling is a spelling of Sault Ste. Marie. Otherwise, the possible spelling is returned.
  */
 export declare function fixSaultSteMarie(possibleSpelling: string, preferredSpelling?: string): string;
-export { preferredSaultSteMarieSpelling, canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings } from './spellings.js';
+export { canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings, preferredSaultSteMarieSpelling } from './spellings.js';
 declare const _default: {
     addSaultSteMarieSpelling: typeof addSaultSteMarieSpelling;
-    isSaultSteMarie: typeof isSaultSteMarie;
     fixSaultSteMarie: typeof fixSaultSteMarie;
-    preferredSaultSteMarieSpelling: string;
+    isSaultSteMarie: typeof isSaultSteMarie;
     canadaPostSaultSteMarieSpelling: string;
     lowerCaseSaultSteMarieSpellings: Set<string>;
+    preferredSaultSteMarieSpelling: string;
 };
 export default _default;

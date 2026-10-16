@@ -38,24 +38,23 @@ export function fixSaultSteMarie(
   possibleSpelling: string,
   preferredSpelling: string = preferredSaultSteMarieSpelling
 ): string {
-  if (isSaultSteMarie(possibleSpelling)) {
-    return preferredSpelling
-  }
-  return possibleSpelling
+  return isSaultSteMarie(possibleSpelling)
+    ? preferredSpelling
+    : possibleSpelling
 }
 
 export {
-  preferredSaultSteMarieSpelling,
   canadaPostSaultSteMarieSpelling,
-  lowerCaseSaultSteMarieSpellings
+  lowerCaseSaultSteMarieSpellings,
+  preferredSaultSteMarieSpelling
 } from './spellings.js'
 
 export default {
   addSaultSteMarieSpelling,
-  isSaultSteMarie,
   fixSaultSteMarie,
+  isSaultSteMarie,
 
-  preferredSaultSteMarieSpelling,
   canadaPostSaultSteMarieSpelling,
-  lowerCaseSaultSteMarieSpellings
+  lowerCaseSaultSteMarieSpellings,
+  preferredSaultSteMarieSpelling
 }

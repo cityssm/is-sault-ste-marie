@@ -27,17 +27,16 @@ export function isSaultSteMarie(possibleSpelling) {
  * @returns The preferred spelling if the possible spelling is a spelling of Sault Ste. Marie. Otherwise, the possible spelling is returned.
  */
 export function fixSaultSteMarie(possibleSpelling, preferredSpelling = preferredSaultSteMarieSpelling) {
-    if (isSaultSteMarie(possibleSpelling)) {
-        return preferredSpelling;
-    }
-    return possibleSpelling;
+    return isSaultSteMarie(possibleSpelling)
+        ? preferredSpelling
+        : possibleSpelling;
 }
-export { preferredSaultSteMarieSpelling, canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings } from './spellings.js';
+export { canadaPostSaultSteMarieSpelling, lowerCaseSaultSteMarieSpellings, preferredSaultSteMarieSpelling } from './spellings.js';
 export default {
     addSaultSteMarieSpelling,
-    isSaultSteMarie,
     fixSaultSteMarie,
-    preferredSaultSteMarieSpelling,
+    isSaultSteMarie,
     canadaPostSaultSteMarieSpelling,
-    lowerCaseSaultSteMarieSpellings
+    lowerCaseSaultSteMarieSpellings,
+    preferredSaultSteMarieSpelling
 };
