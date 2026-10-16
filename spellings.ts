@@ -25,11 +25,10 @@ const product = cartesianProduct([
 ])
 
 // Generate combinations
-const lowerCaseSaultSteMarieSpellingsList = product.map((combination) => {
-  return combination.join('')
-})
+const lowerCaseSaultSteMarieSpellingsList = product.map((combination) => combination.join(''))
 
 // Add specific misspellings and slang names
+// eslint-disable-next-line unicorn/no-top-level-side-effects
 lowerCaseSaultSteMarieSpellingsList.push(
   'saltstemarie',
   'salutstemarie',
